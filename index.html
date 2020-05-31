@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Patrón Builder</title>  <!-- Titulo que aparece en la pestaña superior del navegador -->
+        <link rel="shortcut icon" href="img/pc.ico">
+        <meta charset="UTF-8">           <!-- Para que la página soporte tildes - español latino -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Responsive -->
+        <!--  Incluimos los archivos bootstrap.css a nuestro método observador -->
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="css/alertify.css" rel="stylesheet" type="text/css">
+        <link href="css/alertify.min.css" rel="stylesheet" type="text/css">
+        <style>
+            .jumbotron
+            {
+                margin-top: 20px;
+                background-color: #28b463 ;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                color: aliceblue;
+            }
+            .alert-success
+            {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            .page-footer
+            {
+                background-color: #28b463;
+                color: aliceblue;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="container" > <!-- Contenedor del formulario -->
+            <div class="jumbotron" >
+                <h1 class="text-center" ><strong>Ingeniería de Software - Patrón Builder</strong></h1>
+                <h3  class="text-center">Pasando el "Patrón Builder" al "Estándar ES6". </h3>
+                <p class="text-center">Instrucciones: Click en los botones para ver las especificaciones de productos.</p>
+            </div>
+            <div class="contenido_autos">
+                <div class="row">
+                        <div class="col-md-4">
+                                <button class="btn btn-primary btn-lg btn-block" onclick="Procesadori3(); return false;">Procesador Intel® Core™ i3</button><br><br>
+                                <button class="btn btn-success btn-lg btn-block" onclick="Procesadori5(); return false;">Procesador Intel® Core™ i5</button><br><br>
+                                <button class="btn btn-primary btn-lg btn-block"  onclick="Procesadori7(); return false;">Procesador Intel® Core™ i7</button><br><br>
+                                <div id="imgProcesador"></div><br><br>
+    
+                        </div>
+                    <div class="col-md-8">
+                        <div class="alert alert-success">
+                            <h3 class="text-center" ><strong><u> Especificaciones de producto </u></strong></h3>
+                            <p id="producto"></p>
+                            <p id="marca"></p>
+                            <p id="modelo"></p>
+                            <p id="nucleo"></p>
+                            <p id="frecuencia"></p>
+                            <p id="cache"></p>
+                            <p id="bus"></p>
+                            <p id="memoria"></p>
+                            <p id="tipo"></p>
+                            <p id="grafico"></p>
+                            <p id="instruccion"></p>
+                            <p id="generacion"></p>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/patron.js"></script>
+        <script type="text/javascript" src="js/alertify.js"></script>
+        <script type="text/javascript" src="js/alertify.min.js"></script>
+        <script type="text/javascript">
+            img = document.getElementById("imgProcesador");
+            img.innerHTML = '<img src="img/logo.png" height="300px" width="350px" />';
+        </script>
+    </body>
+    <footer class="page-footer" >
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2018 Estudiante:
+              <a> Br. Misael Enrique Juarez Blanco</a>
+              <a> - JB14002</a>
+            </div>
+            <!-- Copyright -->
+          
+          </footer>
+          
+</html>
